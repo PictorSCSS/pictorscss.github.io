@@ -88,9 +88,78 @@ $(window).on('click', function(e) {
         // return false;
     }
 
-})
+});
+
+
+function extractColors () {
+
+    var div = document.createElement('div');
+    div.classList.add('colors', 'hide');
+    document.body.append(div);
+
+    var extract = getComputedStyle(div).content.replace(/\"/ig, '');
+
+    div.remove();
+    delete div;
+
+    var colors = {};
+
+    extract.split('|').forEach(function(str) {
+
+        if (!!str) {
+
+            var split = str.split(',');
+
+            colors[split[0]] = {
+                color: split[1],
+                font: split[2],
+                hover: split[3],
+                fontHover: split[4],
+            }
+        }
+    });
+
+    return colors;
+}
+
+function changeBgColor (color) {
+
+    this.parentElement.classList.remove('has-selected', 'open');
+    var selected = this.parentElement.querySelector('.selected');
+
+    if (selected) {
+        selected.classList.remove('selected');
+    }
+    var icon = this.children[0];
+    icon.classList.remove('fa-refresh', 'fa-check');
+
+    if (document.body.style.background) {
+
+        document.body.style.background = '';
+        icon.classList.add('fa-refresh');
+        return
+    }
+
+    this.parentElement.classList.add('has-selected');
+    this.classList.add('selected');
+    icon.classList.add('fa-check');
+
+    document.body.style.background = color;
+}
 
 $(document).ready(function () {
+
+    var colors = extractColors();
+    var colorPicker = $('#colorPicker .options');
+
+    for (key in colors) {
+
+        var button = '<button onclick="changeBgColor.bind(this)(\''+colors[key].color+'\')" class="'+key+' xs margin-xs">' +
+                        '<i class="fa fa-refresh"></i> ' + key +
+                    '</button>';
+
+        colorPicker.append(button);
+    }
 
     setTimeout(function() {
 
@@ -98,9 +167,11 @@ $(document).ready(function () {
 
             linkNavigate(window.location);
 
-        } else {
+        }
+        else {
 
             app.one('part-loaded', function() {
+
                 nav.find('#logo a img').click();
             });
         }

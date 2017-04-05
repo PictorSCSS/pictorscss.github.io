@@ -1,15 +1,26 @@
-<h1 class='primary-bg white-text padding-small display-inline'>Grids</h1>
+<h1 class='secondary-bg padding-sm inline'>Grids</h1>
 
-<div class='padding-large margin-top-large margin-bottom-large text-left border white-border'>
+<div class='padding-lg margin-t-lg margin-b-lg text-left border white-border'>
 
-    <h3>Column Grid</h3>
+    <h2>Overview</h2>
 
-    <p>Tradition 12 column grid based on <b class='code'>display: inline-block;</b> instead of floats and margins. Grid container <b class='code'>.grid-columns</b> sets the font size to 0 and resets it to <b class='code'>$font-size</b> in its child <b class='code'>.column</b> elements. This means elements immediately after <b class='code'>.grid-columns</b> must contain the class <b class='code'>.column</b>, or they will not display its contents. Columns are percentage based, so this grid adjusts to the width of its container, or whatever you set it to.</p>
+    <ul class='disc spacing md'>
+        <li>Pictor grids are traditional 12 column grids, but based on <code>display: inline-block;</code> instead of floats and margins.</li>
+        <li>Grid containers <code>.grid</code> or <code>.grid-fw</code> set the font size to 0.</li>
+        <li>Child <code>.column</code> or <code>.item</code> elements reset font-size to <code>$font-size</code></li>
+        <li>Immediately after <code>.grid</code> or <code>.grid-fw</code> element, child element must contain the class <code>.column</code> or <code>.item</code>, or they will not display its contents.</li>
+        <li>Columns are percentage based, so the grids adjust to the width of its container, or whatever you set it to.</li>
+    </ul>
 
     <hr>
 
-    <h6 class='code'>.grid-columns>.one.column*12</h6>
-    <div class='grid-columns text-center'>
+    <h3>Column Grid</h3>
+
+    <hr>
+
+    <code class='margin-b-xs inline-block'>.grid>.one.column*12</code>
+
+    <div class='grid text-center'>
         <div class="one column border black-border dark-gray-bg">1</div>
         <div class="one column border black-border dark-gray-bg">2</div>
         <div class="one column border black-border dark-gray-bg">3</div>
@@ -28,121 +39,121 @@
 
     <h6>Example Usage:</h6>
 
-    <div class='grid-columns white-bg'>
-        <div class='two columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+    <div class='grid white-bg'>
+        <div class='two columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .two
             </div>
         </div>
-        <div class='three columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='three columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .three
             </div>
         </div>
-        <div class='four columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='four columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .four
             </div>
         </div>
-        <div class='three columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='three columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .three
             </div>
         </div>
 
 
-        <div class='three columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='three columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .three
             </div>
         </div>
-        <div class='three columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='three columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .three
             </div>
         </div>
-        <div class='three columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='three columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .three
             </div>
         </div>
-        <div class='three columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='three columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .three
             </div>
         </div>
 
 
-        <div class='one column padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='one column padding-xs'>
+            <div class='info-bg padding-xs'>
                 .one
             </div>
         </div>
-        <div class='ten columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='ten columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .ten
             </div>
         </div>
-        <div class='one column padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='one column padding-xs'>
+            <div class='info-bg padding-xs'>
                 .one
             </div>
         </div>
 
 
-        <div class='two columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='two columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .two
             </div>
         </div>
-        <div class='four columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='four columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .four
             </div>
         </div>
-        <div class='six columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='six columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .six
             </div>
         </div>
 
 
-        <div class='five columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='five columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .five
             </div>
         </div>
-        <div class='five columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='five columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .five
             </div>
         </div>
-        <div class='two columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='two columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .two
             </div>
         </div>
 
 
-        <div class='seven columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='seven columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .seven
             </div>
         </div>
-        <div class='five columns padding-tiny'>
-            <div class='info-bg padding-tiny'>
+        <div class='five columns padding-xs'>
+            <div class='info-bg padding-xs'>
                 .five
             </div>
         </div>
     </div>
 
-    <div class='margin-top-large margin-bottom-large secondary-bg padding-small'>
-        <p class='font-size-medium white-text'>Sample code:</p>
+    <div class='margin-t-lg margin-b-lg secondary-bg padding-sm'>
+        <p class='font-size-md white-text'>Sample code:</p>
 
         <pre><code class='html' id='column-grid-sample'></code></pre>
 
         <div id='column-grid-sample-code' class='hide'>
-            <div class="grid-columns">
+            <div class="grid">
                 <div class="one column mobile-twelve tablet-three"> ... </div>
                 <div class="two columns mobile-twelve tablet-three"> ... </div>
                 <div class="three columns mobile-twelve tablet-three"> ... </div>
@@ -159,42 +170,40 @@
 
     <hr />
 
-    <div id='grid-items'>
+    <div id='grid-fw'>
 
-        <a name='grid-items'></a>
-        <h3>Item Grid</h3>
-        <p>Fixed column width grid based on <b class='code'>display: inline-block;</b> instead of floats and margins. Grid container <b class='code'>.grid-columns</b> sets the font size to 0 and resets it to <b class='code'>$font-size</b> in its child <b class='code'>.column</b> elements. This means elements immediately after <b class='code'>.grid-columns</b> must contain the class <b class='code'>.column</b>, or they will not display its contents. Columns are percentage based, so this grid adjusts to the width of its container, or whatever you set it to.</p>
-
+        <a name='grid-fw'></a>
+        <h3>Item Grid <small>(Fixed Width)</small></h3>
         <hr>
 
-        <span class="code">.grid-items.one>.item</span>
-        <div class="grid-items one text-center margin-bottom-large">
+        <code class='margin-b-xs inline-block'>.grid-fw.one>.item</code>
+        <div class="grid-fw one text-center margin-b-lg">
             <div class="item border black-border dark-gray-bg">1</div>
         </div>
 
-        <span class="code">.grid-items.two>.item*2</span>
-        <div class="grid-items two text-center margin-bottom-large">
+        <code class='margin-b-xs inline-block'>.grid-fw.two>.item*2</code>
+        <div class="grid-fw two text-center margin-b-lg">
             <div class="item border black-border dark-gray-bg">2</div>
             <div class="item border black-border dark-gray-bg">2</div>
         </div>
 
-        <span class="code">.grid-items.three>.item*3</span>
-        <div class="grid-items three text-center margin-bottom-large">
+        <code class='margin-b-xs inline-block'>.grid-fw.three>.item*3</code>
+        <div class="grid-fw three text-center margin-b-lg">
             <div class="item border black-border dark-gray-bg">3</div>
             <div class="item border black-border dark-gray-bg">3</div>
             <div class="item border black-border dark-gray-bg">3</div>
         </div>
 
-        <span class="code">.grid-items.four>.item*4</span>
-        <div class="grid-items four text-center margin-bottom-large">
+        <code class='margin-b-xs inline-block'>.grid-fw.four>.item*4</code>
+        <div class="grid-fw four text-center margin-b-lg">
             <div class="item border black-border dark-gray-bg">4</div>
             <div class="item border black-border dark-gray-bg">4</div>
             <div class="item border black-border dark-gray-bg">4</div>
             <div class="item border black-border dark-gray-bg">4</div>
         </div>
 
-        <span class="code">.grid-items.five>.item*5</span>
-        <div class="grid-items five text-center margin-bottom-large">
+        <code class='margin-b-xs inline-block'>.grid-fw.five>.item*5</code>
+        <div class="grid-fw five text-center margin-b-lg">
             <div class="item border black-border dark-gray-bg">5</div>
             <div class="item border black-border dark-gray-bg">5</div>
             <div class="item border black-border dark-gray-bg">5</div>
@@ -202,8 +211,8 @@
             <div class="item border black-border dark-gray-bg">5</div>
         </div>
 
-        <span class="code">.grid-items.six>.item*6</span>
-        <div class="grid-items six text-center margin-bottom-large">
+        <code class='margin-b-xs inline-block'>.grid-fw.six>.item*6</code>
+        <div class="grid-fw six text-center margin-b-lg">
             <div class="item border black-border dark-gray-bg">6</div>
             <div class="item border black-border dark-gray-bg">6</div>
             <div class="item border black-border dark-gray-bg">6</div>
@@ -212,8 +221,8 @@
             <div class="item border black-border dark-gray-bg">6</div>
         </div>
 
-        <span class="code">.grid-items.seven>.item*7</span>
-        <div class="grid-items seven text-center margin-bottom-large">
+        <code class='margin-b-xs inline-block'>.grid-fw.seven>.item*7</code>
+        <div class="grid-fw seven text-center margin-b-lg">
             <div class="item border black-border dark-gray-bg">7</div>
             <div class="item border black-border dark-gray-bg">7</div>
             <div class="item border black-border dark-gray-bg">7</div>
@@ -223,8 +232,8 @@
             <div class="item border black-border dark-gray-bg">7</div>
         </div>
 
-        <span class="code">.grid-items.eight>.item*8</span>
-        <div class="grid-items eight text-center margin-bottom-large">
+        <code class='margin-b-xs inline-block'>.grid-fw.eight>.item*8</code>
+        <div class="grid-fw eight text-center margin-b-lg">
             <div class="item border black-border dark-gray-bg">8</div>
             <div class="item border black-border dark-gray-bg">8</div>
             <div class="item border black-border dark-gray-bg">8</div>
@@ -235,8 +244,8 @@
             <div class="item border black-border dark-gray-bg">8</div>
         </div>
 
-        <span class="code">.grid-items.nine>.item*9</span>
-        <div class="grid-items nine text-center margin-bottom-large">
+        <code class='margin-b-xs inline-block'>.grid-fw.nine>.item*9</code>
+        <div class="grid-fw nine text-center margin-b-lg">
             <div class="item border black-border dark-gray-bg">9</div>
             <div class="item border black-border dark-gray-bg">9</div>
             <div class="item border black-border dark-gray-bg">9</div>
@@ -248,8 +257,8 @@
             <div class="item border black-border dark-gray-bg">9</div>
         </div>
 
-        <span class="code">.grid-items.ten>.item*10</span>
-        <div class="grid-items ten text-center margin-bottom-large">
+        <code class='margin-b-xs inline-block'>.grid-fw.ten>.item*10</code>
+        <div class="grid-fw ten text-center margin-b-lg">
             <div class="item border black-border dark-gray-bg">10</div>
             <div class="item border black-border dark-gray-bg">10</div>
             <div class="item border black-border dark-gray-bg">10</div>
@@ -262,8 +271,8 @@
             <div class="item border black-border dark-gray-bg">10</div>
         </div>
 
-        <span class="code">.grid-items.eleven>.item*11</span>
-        <div class="grid-items eleven text-center margin-bottom-large">
+        <code class='margin-b-xs inline-block'>.grid-fw.eleven>.item*11</code>
+        <div class="grid-fw eleven text-center margin-b-lg">
             <div class="item border black-border dark-gray-bg">11</div>
             <div class="item border black-border dark-gray-bg">11</div>
             <div class="item border black-border dark-gray-bg">11</div>
@@ -277,8 +286,8 @@
             <div class="item border black-border dark-gray-bg">11</div>
         </div>
 
-        <span class="code">.grid-items.twelve>.item*12</span>
-        <div class="grid-items twelve text-center margin-bottom-large">
+        <code class='margin-b-xs inline-block'>.grid-fw.twelve>.item*12</code>
+        <div class="grid-fw twelve text-center margin-b-lg">
             <div class="item border black-border dark-gray-bg">12</div>
             <div class="item border black-border dark-gray-bg">12</div>
             <div class="item border black-border dark-gray-bg">12</div>
@@ -297,69 +306,69 @@
 
         <h6>Example Usage:</h6>
 
-        <div class='grid-items laptop-six tablet-six mobile-three nine white-bg'>
-            <div class='item padding-tiny'>
-                <div class='padding-tiny success-bg'>1</div>
+        <div class='grid-fw laptop-six tablet-six mobile-three nine white-bg'>
+            <div class='item padding-xs'>
+                <div class='padding-xs success-bg'>1</div>
             </div>
-            <div class='item double padding-tiny'>
-                <div class='padding-tiny success-bg'>2 double</div>
+            <div class='item double padding-xs'>
+                <div class='padding-xs success-bg'>2 double</div>
             </div>
-            <div class='item padding-tiny'>
-                <div class='padding-tiny success-bg'>3</div>
+            <div class='item padding-xs'>
+                <div class='padding-xs success-bg'>3</div>
             </div>
-            <div class='item padding-tiny'>
-                <div class='padding-tiny success-bg'>4</div>
+            <div class='item padding-xs'>
+                <div class='padding-xs success-bg'>4</div>
             </div>
-            <div class='item padding-tiny'>
-                <div class='padding-tiny success-bg'>5</div>
+            <div class='item padding-xs'>
+                <div class='padding-xs success-bg'>5</div>
             </div>
-            <div class='item padding-tiny'>
-                <div class='padding-tiny success-bg'>6</div>
+            <div class='item padding-xs'>
+                <div class='padding-xs success-bg'>6</div>
             </div>
-            <div class='item padding-tiny'>
-                <div class='padding-tiny success-bg'>7</div>
+            <div class='item padding-xs'>
+                <div class='padding-xs success-bg'>7</div>
             </div>
-            <div class='item padding-tiny'>
-                <div class='padding-tiny success-bg'>8</div>
+            <div class='item padding-xs'>
+                <div class='padding-xs success-bg'>8</div>
             </div>
-            <div class='item triple padding-tiny'>
-                <div class='padding-tiny success-bg'>9 triple</div>
+            <div class='item triple padding-xs'>
+                <div class='padding-xs success-bg'>9 triple</div>
             </div>
-            <div class='item padding-tiny'>
-                <div class='padding-tiny success-bg'>10</div>
+            <div class='item padding-xs'>
+                <div class='padding-xs success-bg'>10</div>
                 </span>
             </div>
-            <div class='item padding-tiny'>
-                <div class='padding-tiny success-bg'>11</div>
+            <div class='item padding-xs'>
+                <div class='padding-xs success-bg'>11</div>
                 </span>
             </div>
-            <div class='item padding-tiny'>
-                <div class='padding-tiny success-bg'>12</div>
+            <div class='item padding-xs'>
+                <div class='padding-xs success-bg'>12</div>
                 </span>
             </div>
-            <div class='item padding-tiny'>
-                <div class='padding-tiny success-bg'>13</div>
+            <div class='item padding-xs'>
+                <div class='padding-xs success-bg'>13</div>
                 </span>
             </div>
-            <div class='item padding-tiny'>
-                <div class='padding-tiny success-bg'>14</div>
+            <div class='item padding-xs'>
+                <div class='padding-xs success-bg'>14</div>
                 </span>
             </div>
-            <div class='item padding-tiny'>
-                <div class='padding-tiny success-bg'>15</div>
+            <div class='item padding-xs'>
+                <div class='padding-xs success-bg'>15</div>
                 </span>
             </div>
         </div>
     </div>
 
 
-    <div class='twelve column margin-top-large margin-bottom-large secondary-bg padding-small'>
-        <p class='font-size-medium white-text'>Sample code:</p>
+    <div class='twelve column margin-t-lg margin-b-lg secondary-bg padding-sm'>
+        <p class='font-size-md white-text'>Sample code:</p>
 
-        <pre><code class='html' id='grid-items-sample'></code></pre>
+        <pre><code class='html' id='grid-fw-sample'></code></pre>
 
-        <div id='grid-items-sample-code' class='hide'>
-        <div class="grid-items five mobile-two tablet-three">
+        <div id='grid-fw-sample-code' class='hide'>
+        <div class="grid-fw five mobile-two tablet-three">
             <div class="item"> ... </div>
             <div class="item double"> ... </div>
             <div class="item triple"> ... </div>
@@ -369,8 +378,8 @@
         </div>
 
         <script>
-             var insert = escapeHTML(style_html(document.getElementById('grid-items-sample-code').innerHTML));
-             document.getElementById('grid-items-sample').innerHTML = insert;
+             var insert = escapeHTML(style_html(document.getElementById('grid-fw-sample-code').innerHTML));
+             document.getElementById('grid-fw-sample').innerHTML = insert;
         </script>
     </div>
 

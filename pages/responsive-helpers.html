@@ -1,12 +1,12 @@
-<h1 class='primary-bg white0-text padding-small display-inline'>Responsive Helpers</h1>
+<h1 class='primary-bg white0-text padding-sm inline'>Responsive Helpers</h1>
 
-<div class='padding-large margin-top-large margin-bottom-large text-left border white-border'>
+<div class='padding-lg margin-t-lg margin-b-lg text-left border white-border'>
 
     <h3>Screens</h3>
 
     <p>Pictor applies simple semantics when dealing with grids and creating utilities. Screens can be broken down into roughly 5 devices:</p>
 
-    <ul class='circle margin-bottom-small'>
+    <ul class='circle margin-b-sm'>
         <li><b class='black-text'>mobile:</b> 600px <i><small>default</small></i></li>
         <li><b class='black-text'>tablet:</b> 900px <i><small>default</small></i></li>
         <li><b class='black-text'>laptop:</b> 1200px <i><small>default</small></i></li>
@@ -16,12 +16,12 @@
 
     <h6>For example, when it comes to grids, one can write something like:</h6>
 
-    <div class="margin-bottom-large">
+    <div class="margin-b-lg">
         <pre><code class='html' id='column-grid-sample'></code></pre>
         <div id='column-grid-sample-code' class='hide'>
 
             <!-- Grid Columns -->
-            <div class="grid-columns">
+            <div class="grid">
                 <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns"> ... </div>
                 <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns"> ... </div>
                 <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns"> ... </div>
@@ -37,7 +37,7 @@
             </div>
 
             <!-- Grid Items -->
-            <div class="grid-items mobile-two tablet-three laptop-four desktop-five hd-six">
+            <div class="grid-fw mobile-two tablet-three laptop-four desktop-five hd-six">
                 <div class="item"> ... </div>
                 <div class="item"> ... </div>
                 <div class="item"> ... </div>
@@ -59,11 +59,11 @@
 
     <h6>And it will look like this: <small>Adjust your screen</small></h6>
 
-    <div class="padding-tiny white-bg">
+    <div class="padding-xs white-bg">
         <!-- Grid Columns -->
-        <div class="grid-columns">
-            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two column padding-tiny">
-                <div class="padding-tiny indigo-bg">
+        <div class="grid">
+            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two column padding-xs">
+                <div class="padding-xs indigo-bg">
                     <span class="mobile-only">.mobile-twelve</span>
                     <span class="tablet-only">.tablet-six</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -71,8 +71,8 @@
                     <span class="hd-only">.hd-two</span>
                 </div>
             </div>
-            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-tiny">
-                <div class="padding-tiny indigo-bg">
+            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-xs">
+                <div class="padding-xs indigo-bg">
                     <span class="mobile-only">.mobile-twelve</span>
                     <span class="tablet-only">.tablet-six</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -80,8 +80,8 @@
                     <span class="hd-only">.hd-two</span>
                 </div>
             </div>
-            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-tiny">
-                <div class="padding-tiny indigo-bg">
+            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-xs">
+                <div class="padding-xs indigo-bg">
                     <span class="mobile-only">.mobile-twelve</span>
                     <span class="tablet-only">.tablet-six</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -89,8 +89,8 @@
                     <span class="hd-only">.hd-two</span>
                 </div>
             </div>
-            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-tiny">
-                <div class="padding-tiny indigo-bg">
+            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-xs">
+                <div class="padding-xs indigo-bg">
                     <span class="mobile-only">.mobile-twelve</span>
                     <span class="tablet-only">.tablet-six</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -98,8 +98,8 @@
                     <span class="hd-only">.hd-two</span>
                 </div>
             </div>
-            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-tiny">
-                <div class="padding-tiny indigo-bg">
+            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-xs">
+                <div class="padding-xs indigo-bg">
                     <span class="mobile-only">.mobile-twelve</span>
                     <span class="tablet-only">.tablet-six</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -107,8 +107,8 @@
                     <span class="hd-only">.hd-two</span>
                 </div>
             </div>
-            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-tiny">
-                <div class="padding-tiny indigo-bg">
+            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-xs">
+                <div class="padding-xs indigo-bg">
                     <span class="mobile-only">.mobile-twelve</span>
                     <span class="tablet-only">.tablet-six</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -116,8 +116,8 @@
                     <span class="hd-only">.hd-two</span>
                 </div>
             </div>
-            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-tiny">
-                <div class="padding-tiny indigo-bg">
+            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-xs">
+                <div class="padding-xs indigo-bg">
                     <span class="mobile-only">.mobile-twelve</span>
                     <span class="tablet-only">.tablet-six</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -125,8 +125,8 @@
                     <span class="hd-only">.hd-two</span>
                 </div>
             </div>
-            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-tiny">
-                <div class="padding-tiny indigo-bg">
+            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-xs">
+                <div class="padding-xs indigo-bg">
                     <span class="mobile-only">.mobile-twelve</span>
                     <span class="tablet-only">.tablet-six</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -134,8 +134,8 @@
                     <span class="hd-only">.hd-two</span>
                 </div>
             </div>
-            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-tiny">
-                <div class="padding-tiny indigo-bg">
+            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-xs">
+                <div class="padding-xs indigo-bg">
                     <span class="mobile-only">.mobile-twelve</span>
                     <span class="tablet-only">.tablet-six</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -143,8 +143,8 @@
                     <span class="hd-only">.hd-two</span>
                 </div>
             </div>
-            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-tiny">
-                <div class="padding-tiny indigo-bg">
+            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-xs">
+                <div class="padding-xs indigo-bg">
                     <span class="mobile-only">.mobile-twelve</span>
                     <span class="tablet-only">.tablet-six</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -152,8 +152,8 @@
                     <span class="hd-only">.hd-two</span>
                 </div>
             </div>
-            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-tiny">
-                <div class="padding-tiny indigo-bg">
+            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-xs">
+                <div class="padding-xs indigo-bg">
                     <span class="mobile-only">.mobile-twelve</span>
                     <span class="tablet-only">.tablet-six</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -161,8 +161,8 @@
                     <span class="hd-only">.hd-two</span>
                 </div>
             </div>
-            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-tiny">
-                <div class="padding-tiny indigo-bg">
+            <div class="mobile-twelve tablet-six laptop-four desktop-three hd-two columns padding-xs">
+                <div class="padding-xs indigo-bg">
                     <span class="mobile-only">.mobile-twelve</span>
                     <span class="tablet-only">.tablet-six</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -173,9 +173,9 @@
         </div>
 
         <!-- Grid Items -->
-        <div class="grid-items mobile-two tablet-three laptop-four desktop-five hd-six">
-            <div class="item padding-tiny">
-                <div class="border blue-bg padding-tiny">
+        <div class="grid-fw mobile-two tablet-three laptop-four desktop-five hd-six">
+            <div class="item padding-xs">
+                <div class="border blue-bg padding-xs">
                     <span class="mobile-only">.mobile-two</span>
                     <span class="tablet-only">.tablet-three</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -183,8 +183,8 @@
                     <span class="hd-only">.hd-six</span>
                 </div>
             </div>
-            <div class="item padding-tiny">
-                <div class="border blue-bg padding-tiny">
+            <div class="item padding-xs">
+                <div class="border blue-bg padding-xs">
                     <span class="mobile-only">.mobile-two</span>
                     <span class="tablet-only">.tablet-three</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -192,8 +192,8 @@
                     <span class="hd-only">.hd-six</span>
                 </div>
             </div>
-            <div class="item padding-tiny">
-                <div class="border blue-bg padding-tiny">
+            <div class="item padding-xs">
+                <div class="border blue-bg padding-xs">
                     <span class="mobile-only">.mobile-two</span>
                     <span class="tablet-only">.tablet-three</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -201,8 +201,8 @@
                     <span class="hd-only">.hd-six</span>
                 </div>
             </div>
-            <div class="item padding-tiny">
-                <div class="border blue-bg padding-tiny">
+            <div class="item padding-xs">
+                <div class="border blue-bg padding-xs">
                     <span class="mobile-only">.mobile-two</span>
                     <span class="tablet-only">.tablet-three</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -210,8 +210,8 @@
                     <span class="hd-only">.hd-six</span>
                 </div>
             </div>
-            <div class="item padding-tiny">
-                <div class="border blue-bg padding-tiny">
+            <div class="item padding-xs">
+                <div class="border blue-bg padding-xs">
                     <span class="mobile-only">.mobile-two</span>
                     <span class="tablet-only">.tablet-three</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -219,8 +219,8 @@
                     <span class="hd-only">.hd-six</span>
                 </div>
             </div>
-            <div class="item padding-tiny">
-                <div class="border blue-bg padding-tiny">
+            <div class="item padding-xs">
+                <div class="border blue-bg padding-xs">
                     <span class="mobile-only">.mobile-two</span>
                     <span class="tablet-only">.tablet-three</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -228,8 +228,8 @@
                     <span class="hd-only">.hd-six</span>
                 </div>
             </div>
-            <div class="item padding-tiny">
-                <div class="border blue-bg padding-tiny">
+            <div class="item padding-xs">
+                <div class="border blue-bg padding-xs">
                     <span class="mobile-only">.mobile-two</span>
                     <span class="tablet-only">.tablet-three</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -237,8 +237,8 @@
                     <span class="hd-only">.hd-six</span>
                 </div>
             </div>
-            <div class="item padding-tiny">
-                <div class="border blue-bg padding-tiny">
+            <div class="item padding-xs">
+                <div class="border blue-bg padding-xs">
                     <span class="mobile-only">.mobile-two</span>
                     <span class="tablet-only">.tablet-three</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -246,8 +246,8 @@
                     <span class="hd-only">.hd-six</span>
                 </div>
             </div>
-            <div class="item padding-tiny">
-                <div class="border blue-bg padding-tiny">
+            <div class="item padding-xs">
+                <div class="border blue-bg padding-xs">
                     <span class="mobile-only">.mobile-two</span>
                     <span class="tablet-only">.tablet-three</span>
                     <span class="laptop-only">.laptop-four</span>
@@ -267,7 +267,7 @@
 
     <p>Responsive mixins to use when building pages and components. Scopes internal scss to that particular screen size</p>
 
-    <div class="margin-bottom-large">
+    <div class="margin-b-lg">
         <pre><code class='scss' id='mixin-sample'></code></pre>
         <div id='mixins-sample-code' class='hide'>
 @include mobile-screen {
@@ -296,9 +296,9 @@
 
     <h6>Utility Classes</h6>
 
-    <p class='margin-bottom-large'>Built-in utility classes for hiding and showing elements in the various screens.</p>
+    <p class='margin-b-lg'>Built-in utility classes for hiding and showing elements in the various screens.</p>
 
-    <div class="element-center max-width-mobile text-center padding-huge margin-top-large margin-bottom-large info-bg">
+    <div class="centered max-width-mobile text-center padding-xl margin-t-lg margin-b-lg info-bg">
         <div class="mobile-only">You are on a mobile device</div>
         <div class="tablet-only">You are probably on a tablet device</div>
         <div class="laptop-only">You are probably on a laptop computer</div>
@@ -306,89 +306,89 @@
         <div class="hd-only">You are on a high definition screen</div>
     </div>
 
-    <div class="grid-items three mobile-two">
+    <div class="grid-fw three mobile-two">
 
-        <div class="item valign-top padding-tiny">
+        <div class="item valign-t padding-xs">
             <p><b>All Screens</b></p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.hide <br><small>(display: none;)</small></p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.show <br><small>(display: block;)</small></p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.show-inline <br><small>(display: inline;)</small></p>
-            <p class='padding-tiny white-bg margin-bottom-large'>.show-inline-block <br><small>(display: inline-block;)</small></p>
+            <p class='padding-xs white-bg margin-b-sm'>.hide <br><small>(display: none;)</small></p>
+            <p class='padding-xs white-bg margin-b-sm'>.show <br><small>(display: block;)</small></p>
+            <p class='padding-xs white-bg margin-b-sm'>.show-inline <br><small>(display: inline;)</small></p>
+            <p class='padding-xs white-bg margin-b-lg'>.show-inline-block <br><small>(display: inline-block;)</small></p>
 
         </div>
-        <div class="item valign-top padding-tiny">
+        <div class="item valign-t padding-xs">
 
             <p><b>Mobile</b></p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.mobile-hide</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.mobile-only</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.mobile-show</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.mobile-up-show</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.mobile-only-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.mobile-show-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.mobile-up-show-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.mobile-only-inline-block</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.mobile-show-inline-block</p>
-            <p class='padding-tiny white-bg margin-bottom-large'>.mobile-up-show-inline-block</p>
+            <p class='padding-xs white-bg margin-b-sm'>.mobile-hide</p>
+            <p class='padding-xs white-bg margin-b-sm'>.mobile-only</p>
+            <p class='padding-xs white-bg margin-b-sm'>.mobile-show</p>
+            <p class='padding-xs white-bg margin-b-sm'>.mobile-up-show</p>
+            <p class='padding-xs white-bg margin-b-sm'>.mobile-only-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.mobile-show-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.mobile-up-show-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.mobile-only-inline-block</p>
+            <p class='padding-xs white-bg margin-b-sm'>.mobile-show-inline-block</p>
+            <p class='padding-xs white-bg margin-b-lg'>.mobile-up-show-inline-block</p>
 
         </div>
-        <div class="item valign-top padding-tiny">
+        <div class="item valign-t padding-xs">
 
             <p><b>Tablet</b></p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.tablet-hide</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.tablet-only</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.tablet-show</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.tablet-up-show</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.tablet-only-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.tablet-show-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.tablet-up-show-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.tablet-only-inline-block</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.tablet-show-inline-block</p>
-            <p class='padding-tiny white-bg margin-bottom-large'>.tablet-up-show-inline-block</p>
+            <p class='padding-xs white-bg margin-b-sm'>.tablet-hide</p>
+            <p class='padding-xs white-bg margin-b-sm'>.tablet-only</p>
+            <p class='padding-xs white-bg margin-b-sm'>.tablet-show</p>
+            <p class='padding-xs white-bg margin-b-sm'>.tablet-up-show</p>
+            <p class='padding-xs white-bg margin-b-sm'>.tablet-only-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.tablet-show-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.tablet-up-show-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.tablet-only-inline-block</p>
+            <p class='padding-xs white-bg margin-b-sm'>.tablet-show-inline-block</p>
+            <p class='padding-xs white-bg margin-b-lg'>.tablet-up-show-inline-block</p>
 
         </div>
-        <div class="item valign-top padding-tiny">
+        <div class="item valign-t padding-xs">
 
             <p><b>Laptop</b></p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.laptop-hide</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.laptop-only</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.laptop-show</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.laptop-up-show</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.laptop-only-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.laptop-show-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.laptop-up-show-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.laptop-only-inline-block</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.laptop-show-inline-block</p>
-            <p class='padding-tiny white-bg margin-bottom-large'>.laptop-up-show-inline-block</p>
+            <p class='padding-xs white-bg margin-b-sm'>.laptop-hide</p>
+            <p class='padding-xs white-bg margin-b-sm'>.laptop-only</p>
+            <p class='padding-xs white-bg margin-b-sm'>.laptop-show</p>
+            <p class='padding-xs white-bg margin-b-sm'>.laptop-up-show</p>
+            <p class='padding-xs white-bg margin-b-sm'>.laptop-only-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.laptop-show-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.laptop-up-show-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.laptop-only-inline-block</p>
+            <p class='padding-xs white-bg margin-b-sm'>.laptop-show-inline-block</p>
+            <p class='padding-xs white-bg margin-b-lg'>.laptop-up-show-inline-block</p>
 
         </div>
-        <div class="item valign-top padding-tiny">
+        <div class="item valign-t padding-xs">
 
             <p><b>Desktop</b></p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.desktop-hide</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.desktop-only</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.desktop-show</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.desktop-up-show</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.desktop-only-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.desktop-show-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.desktop-up-show-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.desktop-only-inline-block</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.desktop-show-inline-block</p>
-            <p class='padding-tiny white-bg margin-bottom-large'>.desktop-up-show-inline-block</p>
+            <p class='padding-xs white-bg margin-b-sm'>.desktop-hide</p>
+            <p class='padding-xs white-bg margin-b-sm'>.desktop-only</p>
+            <p class='padding-xs white-bg margin-b-sm'>.desktop-show</p>
+            <p class='padding-xs white-bg margin-b-sm'>.desktop-up-show</p>
+            <p class='padding-xs white-bg margin-b-sm'>.desktop-only-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.desktop-show-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.desktop-up-show-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.desktop-only-inline-block</p>
+            <p class='padding-xs white-bg margin-b-sm'>.desktop-show-inline-block</p>
+            <p class='padding-xs white-bg margin-b-lg'>.desktop-up-show-inline-block</p>
 
         </div>
-        <div class="item valign-top padding-tiny">
+        <div class="item valign-t padding-xs">
 
             <p><b>High Definition</b></p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.hd-hide</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.hd-only</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.hd-show</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.hd-up-show</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.hd-only-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.hd-show-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.hd-up-show-inline</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.hd-only-inline-block</p>
-            <p class='padding-tiny white-bg margin-bottom-small'>.hd-show-inline-block</p>
-            <p class='padding-tiny white-bg margin-bottom-large'>.hd-up-show-inline-block</p>
+            <p class='padding-xs white-bg margin-b-sm'>.hd-hide</p>
+            <p class='padding-xs white-bg margin-b-sm'>.hd-only</p>
+            <p class='padding-xs white-bg margin-b-sm'>.hd-show</p>
+            <p class='padding-xs white-bg margin-b-sm'>.hd-up-show</p>
+            <p class='padding-xs white-bg margin-b-sm'>.hd-only-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.hd-show-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.hd-up-show-inline</p>
+            <p class='padding-xs white-bg margin-b-sm'>.hd-only-inline-block</p>
+            <p class='padding-xs white-bg margin-b-sm'>.hd-show-inline-block</p>
+            <p class='padding-xs white-bg margin-b-lg'>.hd-up-show-inline-block</p>
 
         </div>
 

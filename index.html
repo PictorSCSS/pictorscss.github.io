@@ -6,7 +6,7 @@
 
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
 
-    <link rel='stylesheet' type='text/css' href='./app.min.css' />
+    <link rel='stylesheet' type='text/css' href='./app.css' />
     <link rel='stylesheet' type='text/css' href='./styles/railscasts.css' />
 
     <script type='text/javascript' src='./jquery.js'></script>
@@ -15,12 +15,20 @@
 </head>
 <body>
 
-<section id='nav'></section>
+<section id='nav' class='fixed pos-t z9999 box-shadow dark glow-md'></section>
 
-<section id='page' class='padding-medium max-width-tablet element-center'></section>
+<section id='page' class='padding-md max-width-tablet centered'></section>
 
+<section id='colorPicker' class='fixed bottom-5px right-5px z999 padding-xs padding-t-lg white-bg box-shadow dark glow-xs'>
 
-<footer class='padding-medium white-bg light-gray-text text-center'>
+    <small class='absolute top-5px right-5px'>BG Color Changer</small>
+
+    <div class="options overflow-hidden padding-xs">
+        <button class='xs white picker' onclick='this.parentElement.classList.add("open")'>Change Background Color</button>
+    </div>
+</section>
+
+<footer class='padding-md white-bg light-gray-text text-center'>
     Copyright &copy; 2017 Pictor
 </footer>
 
